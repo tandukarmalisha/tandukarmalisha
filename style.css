@@ -54,7 +54,7 @@ html {
   header{
     background: #111827;
     color: #fff;
-    padding: 28px 0 18px;
+    padding: 5px 0 18px;
     border-bottom: 1px solid rgba(255,255,255,0.06);
     position: sticky;
     top: 0;
@@ -105,7 +105,7 @@ html {
   nav a{
     color: #e5f7fa;
     font-weight: 600;
-    padding: 9px 14px;
+    padding: 5px 10px;
     border-radius: 10px;
     transition: transform .12s ease, background .25s ease, color .25s ease;
   }
