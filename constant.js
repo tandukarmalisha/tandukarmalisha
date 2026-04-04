@@ -70,7 +70,7 @@ const PORTFOLIO_DATA = {
         {
             period: "Nov 2025 - Feb 2026",
             role: "Database Management and Python Development Intern",
-            company: "TechNova Solutions (Dummy)",
+            company: "Machhapuchchhre Bank Limited",
             tasks: [
                 "Completed a 3 months internship in database management and python development.",
                 "Worked with PostgreSQL for database management and data querying.",
