@@ -1,129 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malisha Tandukar | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Malisha Tandukar">
+    <title id="page-title">Malisha Tandukar | Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-      <div class="profile-pic">
-        <!-- Replace "myphoto.jpg" with your actual photo filename -->
-        <img src="myphoto.jpeg" alt="Malisha Tandukar">
-      </div>
-      <div class="intro">
-        <h1>Malisha Tandukar</h1>
-        <p>IT Enthusiast | Web Developer | CSIT Student</p>
-      </div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" id="nav-logo">MT.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      Hello, I’m <strong>Malisha Tandukar</strong>, a motivated and detail-oriented IT enthusiast.
-      I have strong academic performance and hands-on skills in backend development, database managemment and content creation.  
-      I am seeking opportunities for job/internships opportunities to apply my technical expertise, creativity, and problem-solving abilities in real-world IT projects.
-    </p>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 id="hero-name">Name</h1>
+                <h2 class="title" id="hero-role">Role</h2>
+                <p class="description" id="hero-desc">Description</p>
+                <div class="hero-actions-wrapper">
+                    <div class="hero-actions" style="margin-bottom: 1rem;">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#" id="hero-resume" class="btn btn-secondary" style="border-color: var(--accent); color: var(--accent);" download>
+                            <i class="fas fa-file-download" style="margin-right: 8px;"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" id="hero-img-container">
+                <div class="image-placeholder" id="hero-img-placeholder">
+                    <span id="hero-img-text">MT</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="container">
-    <h2>Projects & Achievements</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>IdeaFlux (Blogging Platform)</h3>
-        <p>Created a MERN-based blogging platform with features like blog creation, content management, content-based recommendation system, and responsive design.</p>
-      </div>
-      <div class="project-card">
-        <h3>Streamlit App</h3>
-        <p>ETL app that cleans, manipulates 10000+ rows of data</p>
-      </div>
-      <div class="project-card">
-        <h3>Background Task Processor</h3>
-        <p>Created a workflow that processes background file tasks using Python(Celery)</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div id="about-paragraphs"></div>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Degree:</span>
+                            <span class="value" id="about-degree">Data</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Interests:</span>
+                            <span class="value" id="about-interests">Data</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="value" id="about-location">Data</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value" id="about-email">Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills" class="container">
-    <h2>Skills</h2>
-    
-    <div class="skills-dropdown">
-      <details>
-        <summary>Programming & Development</summary>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>fastAPI</li>
-        </ul>
-      </details>
-  
-      <details>
-        <summary>Database</summary>
-        <ul>
-          <li>SQL (Structured Query Language)</li>
-        </ul>
-      </details>
-  
-      <details>
-        <summary>Digital Skills</summary>
-        <ul>
-          <li>Content Creation</li>
-          <li>Content Writing</li>
-        </ul>
-      </details>
-  
-      <details>
-        <summary>Tools</summary>
-        <ul>
-          <li>GitHub</li>
-          <li>VS Code</li>
-          <li>MS PowerPoint</li>
-          <li>MS Excel</li>
-        </ul>
-      </details>
-  
-      <details>
-        <summary>Soft Skills</summary>
-        <ul>
-          <li>Communication</li>
-          <li>Time Management</li>
-          <li>Team Collaboration</li>
-        </ul>
-      </details>
-    </div>
-  </section>
-  
+    <!-- Skills Section -->
+    <section class="skills section bg-light" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid" id="skills-container">
+                <!-- Dynamically populated from constant.js -->
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <form action="mailto:tandukarmalisha728@gmail.com" method="post" enctype="text/plain" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p class="direct-links">
-      📞 9749465913 <br>
-      ✉️ <a href="mailto:tandukarmalisha728@gmail.com">tandukarmalisha728@gmail.com</a> <br>
-      💻 <a href="https://github.com/tandukarmalisha" target="_blank">github.com/tandukarmalisha</a>
-    </p>
-  </section>
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline" id="experience-container">
+                <!-- Dynamically populated from constant.js -->
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Malisha Tandukar | Portfolio</p>
-  </footer>
+    <!-- Projects Section -->
+    <section class="projects section bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Dynamically populated from constant.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>I am actively seeking full-time roles in QA, Database Administration, or Python Development. Feel free to reach out if you have a fitting opportunity or just want to connect!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span id="contact-email">email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="contact-location">Location</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn" id="link-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub" id="link-github"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter" id="link-twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- FormSubmit is a free tool that forwards form submissions to your email -->
+                <form class="contact-form" id="contact-form">
+                    <!-- Automatically responds with a thank you page, you can customize by reading formsubmit.co documentation -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <!-- FormSubmit configurations -->
+                    <input type="hidden" name="_subject" value="New Portfolio Submission!">
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> <span id="footer-name">Name</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load data first, then logic -->
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./constant.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
