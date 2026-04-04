@@ -17,7 +17,7 @@ const PORTFOLIO_DATA = {
         heroDescription: "Passionate about Software QA, Databases, and Python Development. I enjoy building robust systems with FastAPI and implementing efficient ETL pipelines.",
         
         // Add an image URL here, like: "./assets/my-profile.jpg". Empty means it will use a placeholder text.
-        heroImage: "myphoto.jpeg.jpeg", 
+        heroImage: "myphoto.jpeg", 
         logoText: "MT.",
         resumeURL: "./resume.pdf" // Leave this as "./resume.pdf", drop your actual resume file in the same folder named "resume.pdf"
     },
