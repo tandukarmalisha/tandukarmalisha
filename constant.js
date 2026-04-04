@@ -92,28 +92,28 @@ const PORTFOLIO_DATA = {
     // 5. Featured Projects
     projects: [
         {
-            imageText: "ETL", // Fallback text if no imageURL is provided
+            imageText: "Celery", // Fallback text if no imageURL is provided
             imageURL: "https://images.unsplash.com/photo-1775119223367-03c12e0cbf27?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",     // Add an image URL here, like: "./assets/etl-project.jpg" to replace the text
-            title: "Automated Sales ETL Pipeline",
-            description: "A Python-based script that extracts daily sales data from multiple CSV files, transforms the data to handle missing values, and loads it into a PostgreSQL database.",
-            techStack: ["Python", "PostgreSQL", "Pandas"],
-            link: "#"
+            title: "File Transfer Automation System",
+            description: "A Python-based system that automates file transfers by scheduling tasks using Celery, monitors file changes through automated watchers, and manages worker queues efficiently with Redis for reliable and scalable processing.",
+            techStack: ["Python", "PostgreSQL", "Redis"],
+            link: "https://github.com/tandukarmalisha/file-transfer-automation"
         },
         {
-            imageText: "API", 
+            imageText: "ETL", 
             imageURL: "",
-            title: "Library Management API",
-            description: "A high-performance REST API built with FastAPI to manage library inventory, user accounts, and book borrowing systems with robust validation.",
-            techStack: ["FastAPI", "SQLAlchemy", "Pydantic"],
-            link: "#"
+            title: "ETL Pipeline for Data migration",
+            description: "A Python-based ETL script that efficiently processes and migrates datasets of over 10,000 records into PostgreSQL, incorporating data cleaning logic to handle inconsistencies and ensure data quality during transformation.",
+            techStack: ["Python", "Excel", "PostgreSQL"],
+            link: "https://github.com/tandukarmalisha/ETL-Extract-Transform-Load-Operation"
         },
         {
             imageText: "QA", 
             imageURL: "",
-            title: "E-Commerce Testing Suite",
-            description: "A comprehensive test plan and manual test case repository designed for an e-commerce platform, covering functional, usability, and edge cases.",
-            techStack: ["TestRail", "Jira", "Postman"],
-            link: "#"
+            title: "Automated Signup Workflow",
+            description: "A Python-based web automation script that simulates user signup workflows using Selenium WebDriver, automates data input, and performs form validation checks to ensure accurate and reliable submission processes.",
+            techStack: ["Python", "Jira", "Selenium"],
+            link: "https://github.com/tandukarmalisha/signup-automation"
         }
     ]
 };
