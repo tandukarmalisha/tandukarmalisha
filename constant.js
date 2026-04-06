@@ -92,8 +92,8 @@ const PORTFOLIO_DATA = {
     // 5. Featured Projects
     projects: [
         {
-            imageText: "Celery", // Fallback text if no imageURL is provided
-            imageURL: "https://images.unsplash.com/photo-1775119223367-03c12e0cbf27?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",     // Add an image URL here, like: "./assets/etl-project.jpg" to replace the text
+            imageText: "Background processor", // Fallback text if no imageURL is provided
+            imageURL: "",     // Add an image URL here, like: "./assets/etl-project.jpg" to replace the text
             title: "File Transfer Automation System",
             description: "A Python-based system that automates file transfers by scheduling tasks using Celery, monitors file changes through automated watchers, and manages worker queues efficiently with Redis for reliable and scalable processing.",
             techStack: ["Python", "PostgreSQL", "Redis"],
