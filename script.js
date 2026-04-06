@@ -74,6 +74,7 @@ function populatePortfolio() {
             : proj.imageText;
             
         projContainer.innerHTML += `
+        <a href="${proj.link}" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="project-card">
                 <div class="project-img-placeholder" style="${proj.imageURL ? 'padding: 0;' : ''}">
                     ${imgHtml}
@@ -86,6 +87,7 @@ function populatePortfolio() {
                     </div>
                 </div>
             </div>
+        </a>
         `;
     });
 
