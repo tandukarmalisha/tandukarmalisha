@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
         twitter: "https://twitter.com/",
         
         // Hero Section Content
-        heroDescription: "Passionate about Software QA, Databases, and Python Development. I enjoy building robust systems with FastAPI and implementing efficient ETL pipelines.",
+        heroDescription: "Passionate about Software QA, Databases, and Python Development. I enjoy validating software through manual and automated testing, ensuring applications are reliable, functional, and user-friendly.",
         
         // Add an image URL here, like: "./assets/my-profile.jpg". Empty means it will use a placeholder text.
         heroImage: "myphoto.jpg", 
