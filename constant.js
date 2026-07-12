@@ -17,7 +17,7 @@ const PORTFOLIO_DATA = {
         heroDescription: "Passionate about Software QA, Databases, and Python Development. I enjoy building robust systems with FastAPI and implementing efficient ETL pipelines.",
         
         // Add an image URL here, like: "./assets/my-profile.jpg". Empty means it will use a placeholder text.
-        heroImage: "myphoto.jpeg", 
+        heroImage: "myphoto.jpg", 
         logoText: "MT.",
         resumeURL: "./resume.pdf" // Leave this as "./resume.pdf", drop your actual resume file in the same folder named "resume.pdf"
     },
@@ -111,9 +111,9 @@ const PORTFOLIO_DATA = {
             imageText: "QA", 
             imageURL: "",
             title: "Automated Signup Workflow",
-            description: "A Python-based web automation script that simulates user signup workflows using Selenium WebDriver, automates data input, and performs form validation checks to ensure accurate and reliable submission processes.",
-            techStack: ["Python", "Jira", "Selenium"],
-            link: "https://github.com/tandukarmalisha/signup-automation"
+            description: "Playwright automationfor the Authorized Partner signup workflow using TypeScript, Faker, and Mail.tm OTP verification.",
+            techStack: ["TypeScript", "Playwright", "Mail.tm"],
+            link: "https://github.com/https://github.com/tandukarmalisha/authorized-partner-signup-automation/signup-automation"
         }
     ]
 };
