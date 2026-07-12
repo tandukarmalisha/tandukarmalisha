@@ -6,7 +6,7 @@ const PORTFOLIO_DATA = {
         degree: "BSc.CSIT",
         email: "tandukarmalisha728@gmail.com",
         location: "Kathmandu, Nepal",
-        interests: "QA, Databases, Backend Auth",
+        interests: "QA, Databases, Data Analytics",
         
         // Links for your social media
         github: "https://github.com/",
